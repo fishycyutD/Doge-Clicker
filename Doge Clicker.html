@@ -1,0 +1,544 @@
+<html>
+	<head>
+  <title>Doge Clicker</title>
+  <style>
+  #music
+{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 1000;
+}
+	#sbg
+{
+  position: fixed;
+  top: -20px;
+  right: 0px;
+  height: 10000px;
+  width: 500px;
+  background-color: green;
+  border: 2px lime;
+}
+#i1
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+#i1:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i1:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#i2
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 200px;
+  right: 10px;
+}
+#i2:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i2:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#i3
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 340px;
+  right: 10px;
+}
+#i3:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i3:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#i4
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 480px;
+  right: 10px;
+}
+#i4:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i4:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#i5
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 620px;
+  right: 10px;
+}
+#i5:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i5:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#i6
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 760px;
+  right: 10px;
+}
+#i6:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i6:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#i7
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 900px;
+  right: 10px;
+}
+#i7:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i7:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#i8
+{
+  height: 130px;
+  width: 130px;
+  background-color: white;
+  box-shadow: 0 5px 0 grey;
+  border: 2px black;
+  position: absolute;
+  top: 1040px;
+  right: 10px;
+}
+#i8:active
+{
+  box-shadow: none;
+  transform: translateY(5px);
+  transition-duration: 100ms;
+}
+#i8:hover
+{
+  background-color: white;
+  transition-duration: 500ms;
+}
+#object
+{
+  height: 480px;
+  width: 480px;
+  border: 50px black;
+  position: fixed;
+  right: 700px;
+  top: 200px;
+}
+#object:active
+{
+  height: 460px;
+  width: 460px;
+  transition-duration: 100ms;
+}
+#object:hover
+{
+  transition-duration: 500ms;
+}
+
+h1
+{
+  font-family: sans-serif;
+}
+h2
+{
+  font-family: sans-serif;
+}
+h3
+{
+  font-family: sans-serif;
+}
+#shop
+{
+  color: orange;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+body
+{
+  background-color: lime;
+}
+#earthbg
+{
+position: fixed;
+right: 0px;
+top: 0px;
+width: 1600px;
+height: 1000px;
+}
+#clikscont
+{
+	position: fixed;
+	top: 0px;
+	right: 1000px;
+}
+#Dsym
+{
+	position: fixed;
+	top: 27px;
+	right: 970px;
+	width: 28px;
+	height: 28px;
+}
+#doges
+{
+	position: fixed;
+	top: 34px;
+	right: 1000px;
+}
+#Convert
+{
+	position: fixed;
+	top: 30px;
+	right: 772px;
+	width: 200px;
+	height: 68px;
+}
+.id
+{
+	position: absolute;
+	right: 145px;
+}
+#id1
+{
+	top: 60px;
+}
+#id1-1
+{
+	top: 94px;
+}
+#id1-2
+{
+	top: 128px;
+}
+#id2
+{
+	top: 200px;
+}
+#id2-1
+{
+	top: 234px;
+}
+#id2-2
+{
+	top: 268px;
+}
+#id3
+{
+	top: 340px;
+}
+#id3-1
+{
+	top: 374px;
+}
+#id3-2
+{
+	top: 408px;
+}
+#id4
+{
+	top: 480px;
+}
+#id4-1
+{
+	top: 514px;
+}
+#id4-2
+{
+	top: 548px;
+}
+#id5
+{
+	top: 620px;
+}
+#id5-1
+{
+	top: 654px;
+}
+#id5-2
+{
+	top: 688px;
+}
+#id6
+{
+	top: 760px;
+}
+#id6-1
+{
+	top: 794px;
+}
+#id6-2
+{
+	top: 828px;
+}
+#id7
+{
+	top: 900px;
+}
+#id7-1
+{
+	top: 934px;
+}
+#id7-2
+{
+	top: 968px;
+}
+#id8
+{
+	top: 1040px;
+}
+#id8-1
+{
+	top: 1074px;
+}
+#id8-2
+{
+	top: 1108px;
+}
+#email
+{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	right: 1450px;
+}
+  </style>
+  </head>
+  <body>
+	<audio autoplay controls loop src="DOGE SONG.mp3" id="music"></audio>
+	<img id="earthbg" src="Earth Background.png">
+	<img onclick="location.href='Email The Doge Clicker Devs.html'" title="Email Us!" src="emailDogeclickerDevs-removebg-preview.png" id="email">
+    <button id="sbg"></button>
+	<img id="Dsym" src="C:Users\Hans\OneDrive\Documents\Darrick\Dogecoin-removebg-preview.png">
+    <h1 id="clikscont">Dogecoin: Ɖ0</h1>
+	<h1 id="doges">Doges: 0</h1>
+	<button id="convert">Pet Doges</button>
+    <img src="C:\Users\Hans\OneDrive\Documents\Darrick\doge-removebg-preview.png" id="object">
+    <br>
+    <h1 id="shop">Shop</h1>
+    <img src="https://static.vecteezy.com/system/resources/previews/017/066/808/original/mouse-cursor-icon-line-isolated-on-white-background-black-flat-thin-icon-on-modern-outline-style-linear-symbol-and-editable-stroke-simple-and-pixel-perfect-stroke-illustration-vector.jpg" id="i1">
+    <h2 class="id" id="id1">Cursor</h2>
+	<h2 class="id" id="id1-1">Cost Ɖ50</h2>
+	<h2 class="id" id="id1-2">+1 Doge per click</h2>
+	<img id="i2" src="https://5.imimg.com/data5/AH/YB/MY-40034475/concrete-block-500x500.jpg">
+	<h2 class="id" id="id2">Heavy Brick</h2>
+	<h2 class="id" id="id2-1">Cost Ɖ300</h2>
+	<h2 class="id" id="id2-2">+10 Doge per click</h2>
+    <img src="https://i.pinimg.com/564x/5e/6b/41/5e6b411eb16bd686786ea94de94ca7db.jpg" id="i3">
+	<h2 class="id" id="id3">Better Cursor</h2>
+	<h2 class="id" id="id3-1">Cost Ɖ2k</h2>
+	<h2 class="id" id="id3-2">+35 Doge per click</h2>
+	<img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6550/6550018_sd.jpg" id="i4">
+	<h2 class="id" id="id4">Squishmallow Bed</h2>
+	<h2 class="id" id="id4-1">Cost Ɖ10k</h2>
+	<h3 class="id" id="id4-2">+0.1 times more Dogecoin per Doge</h3>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVm9SuephXOwxZH8j1I_2vPil305lIMicKDQ&s" id="i5">
+	<h2 class="id" id="id5">Dogsitter</h2>
+	<h2 class="id" id="id5-1">Cost Ɖ40k</h2>
+	<h2 class="id" id="id5-2">+500 Doge per click</h2>
+	<img src="C:\Users\Hans\OneDrive\Documents\Darrick\autopetter(no bed).png" id="i6">
+	<h2 class="id" id="id6">Autopetter</h2>
+	<h2 class="id" id="id6-1">Cost Ɖ100k</h2>
+	<h2 class="id" id="id6-2">Pets doges for you</h2>
+	<img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1229892983-square.jpg" id="i7">
+	<h2 class="id" id="id7">Elon Musk</h2>
+	<h2 class="id" id="id7-1">Cost Ɖ100k</h2>
+	<h3 class="id" id="id7-2">+1 times more Dogecoin per Doge</h3>
+	<img src="https://i.scdn.co/image/ab67616d00001e027b3b313e952a80fc839ddb05" id="i8">
+	<h2 class="id" id="id8">Rocket Ship</h2>
+	<h2 class="id" id="id8-1">Cost Ɖ10m</h2>
+	<h3 class="id" id="id8-2">Go to the moon!</h3>
+	<script>
+//distance between shop items are 140px
+//distance between shop item description text is 34px
+//https://img.freepik.com/free-photo/aerial-view-plains-fields_144627-46654.jpg?t=st=1717824048~exp=1717827648~hmac=9d3b25a2e6e56fc63927fa05bbf0da88086027b549111256b2941e41466ccd19
+var autopet = false;
+var cpc = 1;
+var dpd = 1;
+var points = document.getElementById("clikscont");
+var cpoints = document.getElementById("doges");
+var convert = document.getElementById("convert");
+var clicker = document.getElementById("object");
+console.log(clicker);
+var i1 = document.getElementById("i1");
+var i2 = document.getElementById("i2");
+var i3 = document.getElementById("i3");
+var i4 = document.getElementById("i4");
+var i5 = document.getElementById("i5");
+var i6 = document.getElementById("i6");
+var i7 = document.getElementById("i7");
+var i8 = document.getElementById("i8");
+var clicksTotal = 0;
+var dogesTotal = 0;
+
+function squish (glitch_is_pro_and_so_is_vitaminD) {
+	clicker.src= glitch_is_pro_and_so_is_vitaminD;
+}
+
+i1.addEventListener('click', () => {
+	if(clicksTotal>49){
+  	cpc++
+    clicksTotal = clicksTotal-50;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+  }  
+});
+i2.addEventListener('click', () => {
+	if(clicksTotal>299){
+  	cpc+=10
+    clicksTotal = clicksTotal-300;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+  }  
+});
+i3.addEventListener('click', () => {
+	if(clicksTotal>1999){
+  	cpc+=35
+    clicksTotal = clicksTotal-2000;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+  }
+});
+i4.addEventListener('click', () => {
+	if(clicksTotal>9999){
+  	dpd+=0.1
+    clicksTotal = clicksTotal-10000;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+	if(!autopet)
+	squish("dogeOnBed-removebg-preview.png");
+  }
+});
+i5.addEventListener('click', () => {
+	if(clicksTotal>39999){
+  	cpc+=500
+    clicksTotal = clicksTotal-40000;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+  }
+});
+i6.addEventListener('click', () => {
+	if(clicksTotal>99999&&!autopet){
+  	autopet=true
+    clicksTotal = clicksTotal-100000;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+	console.log("i6");
+	squish("autopetter.png");
+  }
+});
+i7.addEventListener('click', () => {
+	if(clicksTotal>99999){
+    clicksTotal = clicksTotal-100000;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+	dpd+=1
+	console.log("i7");
+  }
+});
+i8.addEventListener('click', () => {
+	if(clicksTotal>9999999){
+    clicksTotal = clicksTotal-10000000;
+    points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+	console.log("i8");
+	window.location.href = "Unrealeased Moon - Doge Clicker.html";
+
+  }
+});
+clicker.addEventListener('click', () => {
+	dogesTotal+=cpc
+	console.log("doge has been clicked, you found an easter egg!");
+	cpoints.textContent = "Doges: " + Math.round(dogesTotal);
+	
+	if(autopet) {
+		let dc = dogesTotal*dpd;
+	clicksTotal = clicksTotal+dc;
+	dogesTotal = 0;
+	cpoints.textContent = "Doges: " + dogesTotal;
+	points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+	}
+});
+convert.addEventListener("click", () => {
+	let dc = dogesTotal*dpd/1.5;
+	clicksTotal = clicksTotal+dc;
+	dogesTotal = dogesTotal-dc;
+	cpoints.textContent = "Doges: " + Math.round(dogesTotal);
+	points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
+})
+  </script>
+  </body>
+</html>
