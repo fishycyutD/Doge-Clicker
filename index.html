@@ -383,6 +383,14 @@ height: 1000px;
 	top: 0px;
 	right: 1450px;
 }
+#about
+{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	right: 1400px;
+}
 #STOP
 {
 	position: absolute;
@@ -397,7 +405,12 @@ height: 1000px;
   <body>
 	<audio autoplay controls loop src="DOGE SONG.mp3" id="music"></audio>
 	<img id="earthbg" src="Earth Background.png">
-	<img onclick="location.href='Email The Doge Clicker Devs.html'" title="Email Us!" src="emailDogeclickerDevs-removebg-preview.png" id="email">
+	<a href='Email The Doge Clicker Devs.html' target='_blank'>
+		<img title="Email Us!" src="emailDogeclickerDevs-removebg-preview.png" id="email">
+	</a>
+	<a href='About the dev.html' target='_blank'>
+		<img title="About the Devs" src="infoAboutDev.png" id="about">
+	</a>
     <button id="sbg"></button>
 	<button onclick="location.href='Shriek DOge.html'" title="-.. --- -. - / .-.. . .- ...- . / -- . / .... . .-. . .-.-.-" id="STOP"></button>
 	<img id="Dsym" src="Dogecoin-removebg-preview.png">
@@ -543,9 +556,9 @@ clicker.addEventListener('click', () => {
 	}
 });
 convert.addEventListener("click", () => {
-	let dc = dogesTotal*dpd/1.5;
+	let dc = dogesTotal*dpd;
 	clicksTotal = clicksTotal+dc;
-	dogesTotal = dogesTotal-dc;
+	dogesTotal = 0;
 	cpoints.textContent = "Doges: " + Math.round(dogesTotal);
 	points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
 })
