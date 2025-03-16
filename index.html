@@ -403,16 +403,16 @@ height: 1000px;
   </style>
   </head>
   <body>
-	<audio autoplay controls loop src="Doge Clicker OST - Earth.mp3" id="music"></audio>
+	<audio autoplay controls loop src="DOGE SONG.mp3" id="music"></audio>
 	<img id="earthbg" src="Earth Background.png">
 	<a href='Email The Doge Clicker Devs.html' target='_blank'>
 		<img title="Email Us!" src="emailDogeclickerDevs-removebg-preview.png" id="email">
 	</a>
-	<a href='https://google.com/teapot' target='_blank'>
-		<img title="About the Devs" src="infoAboutDev-removebg-preview.png" id="about">
+	<a href='About the dev.html' target='_blank'>
+		<img title="About the Devs" src="infoAboutDev.png" id="about">
 	</a>
     <button id="sbg"></button>
-	<button onclick="location.href='Shriek DOge.html'" title="-.. --- -. - / .-.. . .- ...- . / -- . / .... . .-. . .-.-.-" id="STOP"></button>
+	<button title="-.. --- -. - / .-.. . .- ...- . / -- . / .... . .-. . .-.-.-" id="STOP"></button>
 	<img id="Dsym" src="Dogecoin-removebg-preview.png">
     <h1 id="clikscont">Dogecoin: Ɖ0</h1>
 	<h1 id="doges">Doges: 0</h1>
@@ -472,6 +472,7 @@ var i5 = document.getElementById("i5");
 var i6 = document.getElementById("i6");
 var i7 = document.getElementById("i7");
 var i8 = document.getElementById("i8");
+const STOP= document.getElementById("STOP");
 var clicksTotal = 0;
 var dogesTotal = 0;
 
@@ -562,6 +563,18 @@ convert.addEventListener("click", () => {
 	cpoints.textContent = "Doges: " + Math.round(dogesTotal);
 	points.textContent = "Dogecoin: Ɖ" + Math.round(clicksTotal);
 })
+STOP.addEventListener("click", () => {
+  setTimeout(() => {
+    document.title = "Page Unresponsive";
+  }, 2000)
+  setTimeout(() => {
+    alert("Page unresponsive. You can wait for it to become responsive or exit the page.");
+  }, 2000)
+  setTimeout(() => {  
+    window.location.href = "Shriek DOge.html";
+  }, 5000);
+})
+
   </script>
   </body>
 </html>
